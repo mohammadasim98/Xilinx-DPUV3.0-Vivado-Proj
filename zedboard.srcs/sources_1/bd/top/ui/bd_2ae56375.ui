@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.4766",
+   "Default View_TopLeft":"0,-262",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1920 -y 100 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1920 -y 120 -defaultsOSRD
+preplace portBus USB_PULLUP -pg 1 -lvl 6 -x 1920 -y 450 -defaultsOSRD
+preplace inst hier_dpu_clk -pg 1 -lvl 2 -x 510 -y 290 -defaultsOSRD
+preplace inst hier_dpu_ghp -pg 1 -lvl 4 -x 1230 -y 170 -defaultsOSRD
+preplace inst processing_system7_1 -pg 1 -lvl 5 -x 1660 -y 180 -defaultsOSRD
+preplace inst rst_gen_ghp -pg 1 -lvl 1 -x 210 -y 180 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1660 -y 450 -defaultsOSRD
+preplace inst dpu_eu_0 -pg 1 -lvl 3 -x 840 -y 130 -defaultsOSRD
+preplace netloc hier_dpu_GHP_CLK_O 1 4 1 1410 200n
+preplace netloc hier_dpu_clk_DPU_CLK 1 2 2 660 250 1030
+preplace netloc hier_dpu_clk_DSP_CLK 1 2 1 620 130n
+preplace netloc hier_dpu_clk_RSTn_DSP 1 2 1 640 150n
+preplace netloc hier_dpu_clk_RSTn_INTC 1 2 2 NJ 320 1050
+preplace netloc hier_dpu_clk_RSTn_PERI 1 2 2 650 260 1040
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 280 390 390 630 290 NJ 290 1430 20 1890
+preplace netloc processing_system7_1_FCLK_RESET0_N 1 0 6 30 400 NJ 400 650J 390 NJ 390 NJ 390 1890
+preplace netloc rst_gen_ghp_peripheral_aresetn 1 1 2 400 110 N
+preplace netloc xlconstant_0_dout 1 5 1 NJ 450
+preplace netloc dpu_eu_0_dpu_interrupt 1 3 2 1020J 40 1420
+preplace netloc hier_dpu_M_AXI_LPD 1 4 1 N 180
+preplace netloc hier_dpu_M_AXI_HP1_FPD 1 4 1 N 160
+preplace netloc hier_dpu_M_AXI_HP0_FPD 1 4 1 N 140
+preplace netloc processing_system7_1_DDR 1 5 1 NJ 100
+preplace netloc processing_system7_1_FIXED_IO 1 5 1 NJ 120
+preplace netloc dpu_eu_0_DPU0_M_AXI_INSTR 1 3 1 N 140
+preplace netloc dpu_eu_0_DPU0_M_AXI_DATA1 1 3 1 N 120
+preplace netloc dpu_eu_0_DPU0_M_AXI_DATA0 1 3 1 N 100
+preplace netloc processing_system7_1_M_AXI_GP0 1 2 4 620 10 NJ 10 NJ 10 1900
+levelinfo -pg 1 0 210 510 840 1230 1660 1920
+pagesize -pg 1 -db -bbox -sgen 0 0 2100 510
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_clkrst_cnt":"2"
+}

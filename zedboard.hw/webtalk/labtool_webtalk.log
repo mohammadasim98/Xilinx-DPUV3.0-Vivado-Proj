@@ -1,0 +1,10 @@
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /media/mohammad/8fe46b48-802d-4aa4-a58d-0b8ee1bde1ad/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/media/mohammad/8fe46b48-802d-4aa4-a58d-0b8ee1bde1ad/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sat Feb 27 22:56:22 2021. For additional details about this file, please refer to the WebTalk help file at /home/mohammad/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:06 . Memory (MB): peak = 391.867 ; gain = 0.000 ; free physical = 1666 ; free virtual = 8980
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 27 22:56:22 2021...

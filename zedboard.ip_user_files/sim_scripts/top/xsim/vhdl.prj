@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/top/ip/top_dpu_0/xci/sfm/fp_exp/sim/fp_exp.vhd" \
+"../../../bd/top/ip/top_dpu_0/xci/sfm/fp_convert/sim/fp_convert.vhd" \
+"../../../bd/top/ip/top_dpu_0/xci/sfm/fp_div/sim/fp_div.vhd" \
+"../../../bd/top/ip/top_dpu_0/xci/sfm/fp_acc/sim/fp_acc.vhd" \
+"../../../bd/top/ip/top_dpu_0/xci/sfm/fp_add/sim/fp_add.vhd" \
+"../../../bd/top/ip/top_rst_gen_clk_0/sim/top_rst_gen_clk_0.vhd" \
+"../../../bd/top/ip/top_rst_gen_clk_dsp_0/sim/top_rst_gen_clk_dsp_0.vhd" \
+"../../../bd/top/ip/top_rst_gen_ghp_0/sim/top_rst_gen_ghp_0.vhd" \
+
+nosort

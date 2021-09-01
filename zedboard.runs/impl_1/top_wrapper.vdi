@@ -1,0 +1,834 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Feb 22 16:18:51 2021
+# Process ID: 3295
+# Current directory: /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1
+# Command line: vivado -log top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+# Log file: /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper.vdi
+# Journal file: /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/srcs/dpu_ip/dpu'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: link_design -top top_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_eu_0_0/top_dpu_eu_0_0.dcp' for cell 'top_i/dpu_eu_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_processing_system7_1_0/top_processing_system7_1_0.dcp' for cell 'top_i/processing_system7_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0.dcp' for cell 'top_i/rst_gen_ghp'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.dcp' for cell 'top_i/hier_dpu_clk/dpu_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0.dcp' for cell 'top_i/hier_dpu_clk/rst_gen_clk'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0.dcp' for cell 'top_i/hier_dpu_clk/rst_gen_clk_dsp'
+INFO: [Project 1-454] Reading design checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_auto_us_0/top_auto_us_0.dcp' for cell 'top_i/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1922.484 ; gain = 0.000 ; free physical = 3968 ; free virtual = 20237
+INFO: [Netlist 29-17] Analyzing 3978 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. top_i/hier_dpu_clk/dpu_clk_wiz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'top_i/hier_dpu_clk/dpu_clk_wiz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0_board.xdc] for cell 'top_i/hier_dpu_clk/dpu_clk_wiz/inst'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0_board.xdc] for cell 'top_i/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc] for cell 'top_i/hier_dpu_clk/dpu_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2801.465 ; gain = 632.828 ; free physical = 3228 ; free virtual = 19508
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc] for cell 'top_i/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0_board.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0_board.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0_board.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0_board.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0.xdc] for cell 'top_i/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_processing_system7_1_0/top_processing_system7_1_0.xdc] for cell 'top_i/processing_system7_1/inst'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_processing_system7_1_0/top_processing_system7_1_0.xdc] for cell 'top_i/processing_system7_1/inst'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0_board.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0_board.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/constrs_1/imports/constrs/pin.xdc]
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/constrs_1/imports/constrs/pin.xdc]
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_eu_0_0/top_dpu_eu_0_0_impl.xdc] for cell 'top_i/dpu_eu_0/inst'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_eu_0_0/top_dpu_eu_0_0_impl.xdc] for cell 'top_i/dpu_eu_0/inst'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_eu_0_0/top_dpu_eu_0_0.xdc] for cell 'top_i/dpu_eu_0/inst'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_dpu_eu_0_0/top_dpu_eu_0_0.xdc] for cell 'top_i/dpu_eu_0/inst'
+Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_auto_us_0/top_auto_us_0_clocks.xdc] for cell 'top_i/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.srcs/sources_1/bd/top/ip/top_auto_us_0/top_auto_us_0_clocks.xdc] for cell 'top_i/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3343 ; free virtual = 19630
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 349 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 222 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM64M => RAM64M (RAMD64E(x4)): 126 instances
+
+19 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 2953.539 ; gain = 1482.734 ; free physical = 3343 ; free virtual = 19631
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3332 ; free virtual = 19624
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 13f32c4b4
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3229 ; free virtual = 19520
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d05c6917
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3180 ; free virtual = 19475
+INFO: [Opt 31-389] Phase Retarget created 99 cells and removed 209 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 8 load pin(s).
+Phase 2 Constant propagation | Checksum: 1537d2c0a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3179 ; free virtual = 19470
+INFO: [Opt 31-389] Phase Constant propagation created 99 cells and removed 673 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 2057a1831
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3163 ; free virtual = 19454
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 487 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 2057a1831
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3174 ; free virtual = 19465
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 21f60e45f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3167 ; free virtual = 19459
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 21f60e45f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3168 ; free virtual = 19459
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              99  |             209  |                                              0  |
+|  Constant propagation         |              99  |             673  |                                              0  |
+|  Sweep                        |               0  |             487  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3148 ; free virtual = 19441
+Ending Logic Optimization Task | Checksum: 17a47d958
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2953.539 ; gain = 0.000 ; free physical = 3148 ; free virtual = 19441
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.316 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 134 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 56 Total Ports: 268
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 16ce286fc
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3012 ; free virtual = 19310
+Ending Power Optimization Task | Checksum: 16ce286fc
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:21 . Memory (MB): peak = 3846.625 ; gain = 893.086 ; free physical = 3105 ; free virtual = 19404
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Ending Logic Optimization Task | Checksum: 1bd5b3f06
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3125 ; free virtual = 19424
+Ending Final Cleanup Task | Checksum: 1bd5b3f06
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3120 ; free virtual = 19419
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3120 ; free virtual = 19419
+Ending Netlist Obfuscation Task | Checksum: 1bd5b3f06
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3112 ; free virtual = 19412
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:02 ; elapsed = 00:00:51 . Memory (MB): peak = 3846.625 ; gain = 893.086 ; free physical = 3113 ; free virtual = 19413
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 3005 ; free virtual = 19304
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2995 ; free virtual = 19297
+INFO: [Common 17-1381] The checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2949 ; free virtual = 19277
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+Command: report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[0].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[10].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[11].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[1].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[2].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[3].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[4].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[2].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[3].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[4].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[5].g_07af5fd4[0].g_9aa100cb[5].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[6].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[6].g_07af5fd4[0].g_9aa100cb[0].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[6].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[0].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1723] DSP_Abus_sign_bit_restriction: top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_3aa346a2/u_dcd815c9/u_6c52c68e/g_7b54f91e[6].g_07af5fd4[0].g_9aa100cb[1].u_a326a45b/g_6779d86c[1].g_91a7f445.u_9efd336d/u_dsp/g_6e2e42a8.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Common 17-14] Message 'DRC REQP-1723' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 150 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2942 ; free virtual = 19274
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cd0f1c17
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2942 ; free virtual = 19274
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2942 ; free virtual = 19274
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dbceac3b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2908 ; free virtual = 19247
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 10f2de769
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2754 ; free virtual = 19096
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 10f2de769
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2754 ; free virtual = 19096
+Phase 1 Placer Initialization | Checksum: 10f2de769
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2747 ; free virtual = 19090
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: e04474fe
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:19 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2692 ; free virtual = 19034
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 1119 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 495 nets or cells. Created 0 new cell, deleted 495 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2667 ; free virtual = 19012
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            495  |                   495  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            495  |                   495  |           0  |           3  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 16f98e60f
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:02 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2660 ; free virtual = 19005
+Phase 2.2 Global Placement Core | Checksum: 17a3cea9d
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:05 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2629 ; free virtual = 18975
+Phase 2 Global Placement | Checksum: 17a3cea9d
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:05 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2650 ; free virtual = 18995
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 13c400087
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:08 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2626 ; free virtual = 18967
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 148d40d7f
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:14 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2622 ; free virtual = 18963
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: d8b91bae
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:15 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2622 ; free virtual = 18963
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: e846a2ee
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:15 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2622 ; free virtual = 18963
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: b8bd3420
+
+Time (s): cpu = 00:04:18 ; elapsed = 00:01:34 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2546 ; free virtual = 18887
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 9cae15a3
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:01:36 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2550 ; free virtual = 18891
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: f6a40262
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:01:39 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2550 ; free virtual = 18891
+Phase 3 Detail Placement | Checksum: f6a40262
+
+Time (s): cpu = 00:04:23 ; elapsed = 00:01:39 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2550 ; free virtual = 18892
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1d0f1b5a1
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net top_i/dpu_eu_0/inst/g_e584eb07.u_822a997b/u_8329ce29/u_4314ae56/m_dad332bf/m_41ee7512/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d0f1b5a1
+
+Time (s): cpu = 00:05:03 ; elapsed = 00:01:50 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2578 ; free virtual = 18919
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.637. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 22f0f56c9
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:01:51 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2579 ; free virtual = 18920
+Phase 4.1 Post Commit Optimization | Checksum: 22f0f56c9
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:01:51 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2579 ; free virtual = 18920
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 22f0f56c9
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:01:52 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2579 ; free virtual = 18920
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 22f0f56c9
+
+Time (s): cpu = 00:05:06 ; elapsed = 00:01:52 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2591 ; free virtual = 18933
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2591 ; free virtual = 18933
+Phase 4.4 Final Placement Cleanup | Checksum: 1c203d0b0
+
+Time (s): cpu = 00:05:06 ; elapsed = 00:01:53 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2592 ; free virtual = 18933
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c203d0b0
+
+Time (s): cpu = 00:05:07 ; elapsed = 00:01:53 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2592 ; free virtual = 18933
+Ending Placer Task | Checksum: fd2e4e31
+
+Time (s): cpu = 00:05:07 ; elapsed = 00:01:53 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2592 ; free virtual = 18933
+INFO: [Common 17-83] Releasing license: Implementation
+83 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:13 ; elapsed = 00:01:56 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2694 ; free virtual = 19035
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2699 ; free virtual = 19040
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2506 ; free virtual = 18988
+INFO: [Common 17-1381] The checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2633 ; free virtual = 19013
+INFO: [runtcl-4] Executing : report_io -file top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2622 ; free virtual = 19003
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_placed.rpt -pb top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2631 ; free virtual = 19013
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:07 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2593 ; free virtual = 18974
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2593 ; free virtual = 18974
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:04 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2415 ; free virtual = 18932
+INFO: [Common 17-1381] The checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2536 ; free virtual = 18956
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: af3afb4c ConstDB: 0 ShapeSum: 4df352e5 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: cdec6139
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2379 ; free virtual = 18799
+Post Restoration Checksum: NetGraph: b39fae54 NumContArr: 1a4cb2e5 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: cdec6139
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2394 ; free virtual = 18815
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: cdec6139
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2350 ; free virtual = 18771
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: cdec6139
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2350 ; free virtual = 18771
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1ee7c4dd6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:30 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2309 ; free virtual = 18732
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.641  | TNS=0.000  | WHS=-0.425 | THS=-1980.673|
+
+Phase 2 Router Initialization | Checksum: f6540bb8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:37 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2299 ; free virtual = 18721
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 94128
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 94128
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 11ac63cac
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:00:57 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 2293 ; free virtual = 18724
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 17647
+ Number of Nodes with overlaps = 3284
+ Number of Nodes with overlaps = 1164
+ Number of Nodes with overlaps = 491
+ Number of Nodes with overlaps = 197
+ Number of Nodes with overlaps = 101
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 7
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.280  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+WARNING: [Route 35-447] Congestion is preventing the router from routing all nets. The router will prioritize the successful completion of routing all nets over timing optimizations.
+Phase 4.1 Global Iteration 0 | Checksum: 173993e13
+
+Time (s): cpu = 01:06:18 ; elapsed = 00:15:35 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1852 ; free virtual = 18559
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1436
+ Number of Nodes with overlaps = 984
+ Number of Nodes with overlaps = 411
+ Number of Nodes with overlaps = 199
+ Number of Nodes with overlaps = 89
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.069 | TNS=-0.069 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 25f26b9b3
+
+Time (s): cpu = 01:22:07 ; elapsed = 00:19:20 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1827 ; free virtual = 18544
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 327
+ Number of Nodes with overlaps = 115
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.352  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 20c50d0ce
+
+Time (s): cpu = 01:22:39 ; elapsed = 00:19:42 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.352  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:42 ; elapsed = 00:19:46 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+Phase 4 Rip-up And Reroute | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:42 ; elapsed = 00:19:46 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+Phase 5.1.1 Delay CleanUp | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:42 ; elapsed = 00:19:46 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+Phase 5.1 TNS Cleanup | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:43 ; elapsed = 00:19:46 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:43 ; elapsed = 00:19:46 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+Phase 5 Delay and Skew Optimization | Checksum: 1de12383d
+
+Time (s): cpu = 01:22:43 ; elapsed = 00:19:47 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 17c4e6ef8
+
+Time (s): cpu = 01:22:58 ; elapsed = 00:19:52 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1825 ; free virtual = 18542
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.352  | TNS=0.000  | WHS=-0.085 | THS=-3.854 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 94f24f27
+
+Time (s): cpu = 01:23:08 ; elapsed = 00:19:55 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1789 ; free virtual = 18506
+Phase 6 Post Hold Fix | Checksum: d3530379
+
+Time (s): cpu = 01:23:08 ; elapsed = 00:19:55 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1790 ; free virtual = 18506
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: a6adb907
+
+Time (s): cpu = 01:23:26 ; elapsed = 00:19:59 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1792 ; free virtual = 18508
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.352  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: a6adb907
+
+Time (s): cpu = 01:23:26 ; elapsed = 00:19:59 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1792 ; free virtual = 18508
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 53.9248 %
+  Global Horizontal Routing Utilization  = 54.6922 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: a6adb907
+
+Time (s): cpu = 01:23:27 ; elapsed = 00:19:59 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1791 ; free virtual = 18508
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: a6adb907
+
+Time (s): cpu = 01:23:27 ; elapsed = 00:20:00 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1789 ; free virtual = 18506
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 10dd706b7
+
+Time (s): cpu = 01:23:31 ; elapsed = 00:20:04 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1791 ; free virtual = 18508
+
+Phase 11 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.362  | TNS=0.000  | WHS=0.050  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 11 Post Router Timing | Checksum: 13c09c473
+
+Time (s): cpu = 01:24:22 ; elapsed = 00:20:14 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1724 ; free virtual = 18441
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 01:24:23 ; elapsed = 00:20:14 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1931 ; free virtual = 18648
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 01:24:30 ; elapsed = 00:20:18 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1931 ; free virtual = 18648
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1931 ; free virtual = 18648
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1712 ; free virtual = 18602
+INFO: [Common 17-1381] The checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1869 ; free virtual = 18631
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+Command: report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1848 ; free virtual = 18610
+INFO: [runtcl-4] Executing : report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:52 ; elapsed = 00:00:21 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1886 ; free virtual = 18648
+INFO: [runtcl-4] Executing : report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+Command: report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+124 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:02 ; elapsed = 00:00:16 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1818 ; free virtual = 18597
+INFO: [runtcl-4] Executing : report_route_status -file top_wrapper_route_status.rpt -pb top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_wrapper_timing_summary_routed.rpt -pb top_wrapper_timing_summary_routed.pb -rpx top_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_wrapper_bus_skew_routed.rpt -pb top_wrapper_bus_skew_routed.pb -rpx top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+140 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1787 ; free virtual = 18567
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1553 ; free virtual = 18507
+INFO: [Common 17-1381] The checkpoint '/home/mohammad/Resnet50_ZedBoard_2019_2/pl/prj/zedboard/zedboard.runs/impl_1/top_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 3846.625 ; gain = 0.000 ; free physical = 1674 ; free virtual = 18515
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file top_wrapper_timing_summary_postroute_physopted.rpt -pb top_wrapper_timing_summary_postroute_physopted.pb -rpx top_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_wrapper_bus_skew_postroute_physopted.rpt -pb top_wrapper_bus_skew_postroute_physopted.pb -rpx top_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 22 16:45:43 2021...
